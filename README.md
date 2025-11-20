@@ -25,6 +25,9 @@ Ordinea este corectă și obligatorie: DISM prima dată → apoi SFC.
 ### Descărcare directă
 [**↓ CLICK AICI PENTRU DESCĂRCARE**](/ReparaWindows.bat)
 
+## Capturi de ecran
+https://github.com/RaulCapelaru/Reparare-Windows-2025/blob/main/app.jpg
+
 ### De ce funcționează?
 - Este metoda oficială recomandată de Microsoft
 - Nu instalează nimic suplimentar
