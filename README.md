@@ -6,10 +6,17 @@
 Cea mai simplă și eficientă metodă oficială Microsoft de reparare Windows 10 și 11.
 
 ### Ce face acest fișier?
-1. **DISM** – repară imaginea de sistem (sursa originală Windows)
-2. **SFC /scannow** – înlocuiește toate fișierele de sistem corupte
+1. **Verifică drepturile de Administrator** – se auto-repornește cu UAC dacă e nevoie
+2. **Verifică conexiunea la Internet** – DISM are nevoie de online pentru a descărca fișierele corecte
+3. **DISM** – repară imaginea de sistem (sursa originală Windows)
+4. **SFC /scannow** – înlocuiește toate fișierele de sistem corupte
+5. **Salvează un log complet** în `%TEMP%\ReparareWindows_<data>.log` pentru diagnosticare
 
 Ordinea este corectă și obligatorie: DISM prima dată → apoi SFC.
+
+### Semnificația culorilor la final
+- 🟢 **Verde** – reparația a reușit (coduri de ieșire 0 pentru DISM și SFC)
+- 🟡 **Galben** – apar codurile de eroare DISM/SFC, iar logul se deschide automat în Notepad
 
 ### Compatibilitate
 - Windows 11 24H2 și 25H2 (testat noiembrie 2025)
